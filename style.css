@@ -1,0 +1,53 @@
+
+body{
+margin:0;
+font-family:Georgia,serif;
+background:linear-gradient(to bottom,#fff7f8,#ffecef);
+min-height:100vh;
+color:#8b4a5a;
+}
+
+.container{
+max-width:900px;
+margin:auto;
+padding:40px 20px;
+text-align:center;
+}
+
+h1{
+font-size:64px;
+margin-bottom:0;
+color:#c85d7d;
+}
+
+h2{
+font-size:56px;
+margin-top:10px;
+letter-spacing:4px;
+}
+
+.video-card{
+background:white;
+padding:18px;
+border-radius:30px;
+border:2px solid #f1d0d6;
+box-shadow:0 10px 30px rgba(0,0,0,.08);
+margin:30px auto;
+}
+
+video{
+width:100%;
+border-radius:20px;
+}
+
+.wish{
+font-size:32px;
+line-height:1.5;
+margin-top:40px;
+}
+
+.analytics{
+margin-top:30px;
+font-size:18px;
+color:#a66a79;
+}
