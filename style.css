@@ -1,140 +1,149 @@
 *{
-margin:0;
-padding:0;
-box-sizing:border-box;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
 body{
-min-height:100vh;
-display:flex;
-justify-content:center;
-align-items:center;
-padding:40px 20px;
-font-family:Georgia, serif;
+    min-height:100vh;
+    padding:40px 20px;
+    font-family:Georgia, serif;
 
-background:
-radial-gradient(circle at top,#1f1736 0%,#0a0d1f 60%,#05070f 100%);
+    background:
+    radial-gradient(circle at top,#1f1736,#090b1a 65%);
 
-overflow-x:hidden;
-color:white;
+    color:white;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
 }
 
 .stars{
-position:fixed;
-inset:0;
-background-image:
-radial-gradient(2px 2px at 20px 30px,#fff,transparent),
-radial-gradient(2px 2px at 180px 120px,#ffd700,transparent),
-radial-gradient(2px 2px at 450px 200px,#fff,transparent),
-radial-gradient(3px 3px at 700px 150px,#ffd700,transparent),
-radial-gradient(2px 2px at 1000px 80px,#fff,transparent);
-opacity:.8;
-z-index:-1;
+    position:fixed;
+    inset:0;
+    background-image:
+    radial-gradient(2px 2px at 20px 30px,#fff,transparent),
+    radial-gradient(2px 2px at 150px 90px,#ffd700,transparent),
+    radial-gradient(2px 2px at 300px 150px,#fff,transparent),
+    radial-gradient(3px 3px at 600px 200px,#ffd700,transparent),
+    radial-gradient(2px 2px at 900px 100px,#fff,transparent);
+    opacity:.7;
+    z-index:-1;
 }
 
 .card{
-width:min(850px,95vw);
+    width:min(900px,95vw);
 
-background:rgba(255,255,255,.05);
+    background:rgba(255,255,255,.05);
 
-backdrop-filter:blur(18px);
+    backdrop-filter:blur(18px);
 
-border:1px solid rgba(255,200,220,.25);
+    border:1px solid rgba(255,220,235,.20);
 
-border-radius:35px;
+    border-radius:35px;
 
-padding:50px 40px;
+    padding:50px 40px;
 
-text-align:center;
+    text-align:center;
 
-box-shadow:
-0 0 50px rgba(255,180,210,.18),
-0 0 120px rgba(255,180,210,.08);
+    box-shadow:
+    0 0 50px rgba(255,180,210,.15),
+    0 0 120px rgba(255,180,210,.08);
 }
 
 .star-top{
-font-size:38px;
-color:#ffd76d;
-margin-bottom:20px;
+    font-size:32px;
+    color:#ffd76d;
+    margin-bottom:15px;
 }
 
 h1{
-font-size:64px;
-font-weight:700;
+    font-size:64px;
 
-background:linear-gradient(
-90deg,
-#ffd8f0,
-#fff,
-#ffd8f0
-);
+    background:linear-gradient(
+        90deg,
+        #ffd8f0,
+        #ffffff,
+        #ffd8f0
+    );
 
--webkit-background-clip:text;
--webkit-text-fill-color:transparent;
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
 
-text-shadow:0 0 25px rgba(255,180,210,.35);
+    text-shadow:
+    0 0 20px rgba(255,182,193,.4);
+
+    margin-bottom:20px;
 }
 
 .line{
-margin:18px 0;
-font-size:22px;
-color:#ffd76d;
+    color:#ffd76d;
+    font-size:22px;
+    margin:15px 0;
 }
 
 .subtitle{
-font-size:26px;
-line-height:1.7;
-color:#f5e7f2;
-margin-bottom:20px;
+    font-size:24px;
+    color:#f0e6ef;
+    line-height:1.7;
+    margin:20px 0;
 }
 
 .video-wrapper{
-display:flex;
-justify-content:center;
-margin-top:20px;
+    display:flex;
+    justify-content:center;
+    margin-top:30px;
 }
 
+/* MOBILE REEL VIDEO */
+
 .video-wrapper video{
-width:420px;
-max-width:90vw;
-aspect-ratio:9/16;
 
-border-radius:24px;
+    width:300px;
 
-border:2px solid rgba(255,190,220,.55);
+    height:533px;
 
-box-shadow:
-0 0 25px rgba(255,180,210,.35),
-0 0 80px rgba(255,180,210,.15);
+    object-fit:cover;
+
+    border-radius:24px;
+
+    border:2px solid rgba(255,180,220,.55);
+
+    box-shadow:
+    0 0 25px rgba(255,180,220,.30),
+    0 0 60px rgba(255,180,220,.15);
 }
 
 .footer{
-margin-top:35px;
-font-size:32px;
-color:#ffd76d;
+    margin-top:35px;
+
+    font-size:30px;
+
+    color:#ffd76d;
 }
 
 @media(max-width:768px){
 
-h1{
-font-size:42px;
-}
+    .card{
+        padding:30px 20px;
+    }
 
-.subtitle{
-font-size:18px;
-}
+    h1{
+        font-size:42px;
+    }
 
-.video-wrapper video{
-width:300px;
-}
+    .subtitle{
+        font-size:18px;
+    }
 
-.footer{
-font-size:22px;
-}
+    .video-wrapper video{
+        width:260px;
+        height:462px;
+    }
 
-.card{
-padding:30px 20px;
-}
-
+    .footer{
+        font-size:22px;
+    }
 }
 ```
